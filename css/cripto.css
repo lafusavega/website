@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.foto{
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 200px;
+}
+body{
+    align-items: center;
+    background-color: white;
+    
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.header img{
+    border-radius: 50%;
+    width: 150px;
+    margin-left: 100px;
+}
+
+.nav_link{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+
+}
+.nav_item{
+    list-style: none;
+    display: flex;
+    margin-right: 200px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.nav_link:hover{
+    background-color: rgb(17, 8, 10);
+}
+.info{
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 10px;
+    border-radius: 10px;
+}
+.info p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+h1,h3,p{
+    color: white;
+}
+h1{
+    font-size: 45px;
+}
+h3{
+    font-size: 35px;
+}
+p{
+    font-size: 20px;
+}
+
+.formacion_academica{
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.preescolar,.universidad,.primaria,.secundaria,.prepa{
+    display: flex;
+}
+
+.escuela{
+    width: 200px;
+    border-radius: 10px;
+    margin: 7px;
+}
+.redes{
+    margin: 10px;
+    padding: 10px;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    border-radius: 10px;
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 310px;
+    transition: 0.5s;
+
+}
+
+.sci{
+    position: relative;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+
+}
+
+.sci li::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% + 120px));
+    font-size: 14vh;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.sci li:hover::before{
+    opacity: 0.5;
+    transform: translate(-50%,calc(-50% + 120px));
+}
+
+.sci li a{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s;
+
+}
+
+.sci li a:hover.facebook{
+    background: #1877f2;
+
+}
+.sci li a:hover.youtube{
+    background: #df0c0c;
+
+}
+
+.sci li a:hover.whatsapp{
+    background: #0ea71f;
+
+}
+
+.sci li a:hover.instagram{
+    background: #b8129a;
+
+}
+
+.sci li a .fa{
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.sci li a:hover .fa{
+    color: white;
+}
+.hobbies{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    
+    
+}
+.hobbies_content{
+    display: flex;
+}
+.cardview_futbol,.cardview_videogames, .cardview_learning{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px;
+    transition: all 0.25s;
+    margin: 25px;
+    align-items: center;
+    text-align: center;
+
+}
+.cardview_futbol:hover,.cardview_videogames:hover, .cardview_learning:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+h4{
+    font-size: 25px;
+    color: white;
+}
+.cardview_futbol p,.cardview_videogames p, .cardview_learning p{
+    font-size: 15px;
+    margin: 20px;
+    padding: 20px;
+
+}
+.hobbies img{
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.acercade{
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.biografiacontent{
+    display: flex;
+    
+    margin: 20px;
+    padding: 20px;
+
+}
+.biografiacontent p{
+    font-size: 15px;
+}
+.biografiacontent img{
+    margin: 7px;
+}
